@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: url(./monkey-island-sunset-835c00ee-8f2f-49d1-bf58-cd021aa607dd.jpg) no-repeat;
+    background-size: 100%;
+
+}
+
+/* #robot {
+    background: url(http://atomicrobotdesign.com/blog_media/css-sprite/walk-right.png);
+    width: 102px;
+    height: 148px;
+    animation: walk 1s steps(6) infinite;
+    margin-left: 20px; */
+/* } */
+
+#cloud {
+    background: url(./imageedit_2_5821395272.gif);
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    animation: forward 6s infinite;
+}
+
+#chico {
+    background: url(./walk-right.png);
+    width: 102px;
+	height: 148px;
+	margin-top: 40px;
+    animation: walk .9s steps(6) infinite, 
+               forward 9s infinite;
+    position: absolute;
+    bottom: 150px;
+}
+
+#sonic {
+    background: url(./sonic-corriendo.gif);
+    width: 145px;
+	height: 148px;
+	margin-top: 40px;
+    animation: forward 5s infinite;
+    position: absolute;
+    bottom: 130px;
+}
+
+@keyframes walk {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: -612px;
+    }
+}
+
+@keyframes forward {
+    0% {
+        transform: translate(-10px);
+    }
+
+    100% {
+        transform: translate(110vw);
+    }
+} 
+
+@keyframes rotate { 100% { transform:rotate(-360deg); } }
+
